@@ -1,0 +1,962 @@
+{ "entries": [
+  {
+    "id": "clw4s9v6a00003b6gqj4k2l8f",
+    "title": "Primeiro Contato e Interesse Específico no Projeto Oxossi",
+    "content": "Entrei em contato com o Professor Tiago Gil, por indicação do Caio, manifestando meu interesse específico em participar do projeto Oxossi, destacando minha experiência com JavaScript como diferencial técnico. O professor me apresentou o Oxossi como um buscador especializado de artigos sobre o Brasil Colônia, parte fundamental dos projetos digitais do laboratório. Discutimos a arquitetura do sistema, que utiliza tecnologias de análise de texto para facilitar o acesso a documentos históricos. Também conversamos sobre outros projetos existentes, como a plataforma de mapa de Goiás do século XIX, evidenciando o foco do laboratório em ferramentas digitais para pesquisa histórica. A conversa evoluiu para a necessidade crítica de atualizar a infraestrutura do servidor que hospedaria o Oxossi.",
+    "date": "2024-10-15T13:09:52.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6a00013b6g4h2j7k5l",
+    "title": "Primeira Tarefa Crítica: Preparação da Infraestrutura para o Oxossi",
+    "content": "A conversa inicial evoluiu para uma necessidade imediata do laboratório: a atualização de um servidor Debian 8 para Debian 12 e a migração de duas instalações do MediaWiki (Cliomatica e Atlas). Esta infraestrutura é essencial para hospedar o projeto Oxossi e outros sistemas do laboratório. A modernização do servidor representa um pré-requisito fundamental para implementar as funcionalidades avançadas do Oxossi, incluindo o processamento de texto e análise de documentos históricos.",
+    "date": "2024-10-15T13:37:07.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6b00023b6gh7k3l8m9",
+    "title": "Análise Técnica para Hospedar o Oxossi",
+    "content": "Analisei a situação do servidor que hospedará o Oxossi, identificando os desafios do salto de versão do Debian (8 para 12), a necessidade de backups incrementais e os serviços em execução (SSH, MySQL, PostgreSQL, Apache, PHP). Esta análise é crucial para garantir que o ambiente seja adequado para as demandas computacionais do Oxossi, incluindo processamento de grandes volumes de documentos históricos e análise de texto em tempo real.",
+    "date": "2024-10-15T13:52:27.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6b00033b6g2j5k8l1n",
+    "title": "Planejamento da Infraestrutura para Oxossi e MediaWiki",
+    "content": "Verifiquei a compatibilidade das versões de software (PHP, PostgreSQL, MySQL) com as atualizações do Debian e do MediaWiki, planejando também a futura implantação do Oxossi. O planejamento incluiu considerações específicas para o stack tecnológico do Oxossi (Python, Node.js, MongoDB) e sua integração com as aplicações MediaWiki existentes (Cliomatica e Atlas). Esta análise de compatibilidade é fundamental para garantir que todas as aplicações, incluindo o Oxossi, funcionem harmoniosamente no servidor atualizado.",
+    "date": "2024-10-15T15:20:29.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6c00043b6g5k8l1m7p",
+    "title": "Recebimento das Credenciais do Servidor",
+    "content": "O professor me forneceu as senhas de acesso ao servidor para iniciar os trabalhos de atualização e migração, preparando o ambiente para hospedar o projeto Oxossi.",
+    "date": "2024-10-15T15:16:48.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6c00053b6g9l1m7p3q",
+    "title": "Remarcação do Encontro Presencial",
+    "content": "Tive que remarcar nosso encontro presencial de sexta-feira devido a um compromisso familiar (colonoscopia do meu pai).",
+    "date": "2024-10-16T15:36:27.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6d00063b6g1m7p3q9r",
+    "title": "Estratégia de Atualização do Servidor para o Oxossi",
+    "content": "Sugeri uma estratégia alternativa para a atualização do servidor: atualizar os softwares (como Apache) isoladamente antes de tentar a atualização do Debian, utilizando backups como medida de segurança. Esta abordagem gradual visa minimizar riscos para o futuro ambiente de produção do Oxossi.",
+    "date": "2024-10-16T15:57:36.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6d00073b6g7p3q9r5s",
+    "title": "Confirmação de Disponibilidade",
+    "content": "Confirmamos a disponibilidade para um encontro na semana seguinte, no período da tarde ou noite.",
+    "date": "2024-10-17T18:27:41.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6e00083b6g3q9r5s2t",
+    "title": "Tentativa de Atualização Remota do Servidor",
+    "content": "Propus tentar a atualização do Debian remotamente durante o final de semana e solicitei as senhas dos bancos de dados (MySQL e PostgreSQL).",
+    "date": "2024-10-18T13:26:29.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6e00093b6g9r5s2t8u",
+    "title": "Desencontro para Reunião Presencial",
+    "content": "Marcamos uma conversa presencial para as 18:30 na sala 76 do PJC, mas houve um desencontro e ambos confundimos a data.",
+    "date": "2024-10-18T19:05:08.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6f000a3b6g5s2t8u1v",
+    "title": "Perda de Acesso SSH ao Servidor",
+    "content": "Informei ao professor que a tentativa de atualização remota resultou na perda de acesso SSH ao servidor, mas que ele continuava online e eu possuía um backup local.",
+    "date": "2024-10-22T17:01:19.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6f000b3b6gt8u1v7w",
+    "title": "Planejamento de Acesso Físico ao Servidor",
+    "content": "Discutimos a logística de acesso físico ao servidor, que é um desktop localizado no CPD, e o professor se prontificou a pedir a retirada da máquina.",
+    "date": "2024-10-22T17:06:05.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6g000c3b6gu1v7w4x",
+    "title": "Reunião Presencial no PJC",
+    "content": "Marcamos e realizamos o encontro para as 18:45 na sala 76 do PJC para discutir os próximos passos.",
+    "date": "2024-10-23T16:14:41.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6g000d3b6g7w4x1y2z",
+    "title": "Agendamento de Trabalho no Servidor Físico",
+    "content": "Confirmamos um encontro para sexta-feira, 14:30, no módulo 24 do ICC (Pós em História), para trabalhar diretamente no servidor físico.",
+    "date": "2024-10-24T21:07:54.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6h000e3b6g4x1y2z8a",
+    "title": "Trabalho Presencial no Servidor",
+    "content": "O professor confirmou a retirada do servidor do CPD. Fui à UnB e trabalhei presencialmente no servidor durante a tarde e início da noite.",
+    "date": "2024-10-25T13:40:04.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6h000f3b6gy2z8a5b",
+    "title": "Configuração de Container Docker para o Oxossi",
+    "content": "Justifiquei minha ausência e informei que estava trabalhando na configuração de um container Docker para facilitar a implementação das aplicações no servidor, incluindo futuramente o projeto Oxossi. Esta abordagem de containerização visa simplificar a implantação e manutenção do Oxossi em produção.",
+    "date": "2024-10-29T19:24:48.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6i000g3b6g8a5b2c8d",
+    "title": "Agendamento para Instalação do Xubuntu",
+    "content": "Agendei um encontro para quinta-feira à tarde para continuar o trabalho no servidor, planejando instalar o Xubuntu e configurar o SSH.",
+    "date": "2024-10-29T19:26:55.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6i000h3b6g5b2c8d1e",
+    "title": "Proposta de Pesquisa e TCC",
+    "content": "Confirmei o encontro para as 16:30/17:00. O professor mencionou uma boa notícia e uma proposta de pesquisa, e conversamos sobre meu TCC.",
+    "date": "2024-10-31T14:09:49.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6j000i3b6gc8d1e7f",
+    "title": "Configuração do SSH e Backup",
+    "content": "Trabalhei no servidor até tarde, configurei o SSH e fiz backup dos dados, mas deixei o servidor desligado por falta de nobreak e refrigeração.",
+    "date": "2024-10-31T22:29:43.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6j000j3b6g1e7f4g2h",
+    "title": "Verificação Pós-Atualização para Hospedar o Oxossi",
+    "content": "Verifiquei o estado das aplicações no servidor (agora com Xubuntu). Confirmei a necessidade de alterar os códigos PHP. As aplicações Oxoce (precursora do Oxossi) e Goyaz estavam rodando, mas as baseadas em MediaWiki não. O ambiente está sendo preparado para a futura implantação do Oxossi moderno.",
+    "date": "2024-11-01T19:19:26.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6k000k3b6g7f4g2h8i",
+    "title": "Trabalho Local com XAMPP",
+    "content": "Planejei testar e corrigir os problemas de PHP localmente no meu notebook durante o final de semana, utilizando XAMPP.",
+    "date": "2024-11-01T19:49:39.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6k000l3b6g4g2h8i5j",
+    "title": "Discussão sobre phpMyAdmin e MediaWiki",
+    "content": "O professor perguntou sobre o phpMyAdmin e a instalação do MediaWiki. Expliquei que instalei o phpMyAdmin (mas não testei) e que a versão antiga do MediaWiki não rodou com o PHP 8.",
+    "date": "2024-11-04T15:45:08.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6l000m3b6g2h8i5j1k",
+    "title": "Teste de Acesso SSH Remoto",
+    "content": "Planejamos testar o acesso SSH remoto assim que o professor ligasse o servidor, cientes das possíveis barreiras de segurança da UnB.",
+    "date": "2024-11-04T18:35:22.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6l000n3b6g8i5j1k7l",
+    "title": "Configuração Remota do SSH",
+    "content": "Realizamos um extenso teste remoto para configurar e habilitar o acesso SSH externo, mas o acesso continuou bloqueado, provavelmente pelo firewall da UnB.",
+    "date": "2024-11-05T13:36:52.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6m000o3b6g5j1k7l3m",
+    "title": "Trabalho Presencial para Configurar SSH",
+    "content": "Fui à UnB presencialmente à tarde para configurar o SSH e continuar o trabalho no servidor, focando nas aplicações Atlas e Cliomatica.",
+    "date": "2024-11-06T13:16:06.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6m000p3b6g1k7l3m9n",
+    "title": "Preparação para Containerização do Oxossi",
+    "content": "Encontrei dificuldades com versões antigas do PHP, percebendo a necessidade de atualizar as instâncias do MediaWiki para compatibilidade com PHP 8. Durante esse processo, identifiquei que a containerização seria uma excelente abordagem para o futuro projeto Oxossi, permitindo isolamento de dependências e facilidade de manutenção.",
+    "date": "2024-11-06T20:54:42.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6n000q3b6g7l3m9n5o",
+    "title": "Planejamento de Repositório no GitHub",
+    "content": "Planejei subir um repositório no GitHub com a estrutura do container e as atualizações realizadas localmente, incluindo um README com instruções.",
+    "date": "2024-11-08T14:30:08.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6n000r3b6g3m9n5o1p",
+    "title": "Dificuldades com o Banco de Dados `biblioatlas`",
+    "content": "Informei ao professor sobre a dificuldade em subir o repositório completo para o GitHub devido ao tamanho do banco de dados `biblioatlas` (5,45 GB), que apresentava erros de sintaxe.",
+    "date": "2024-11-10T12:25:17.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6o000s3b6g9n5o1p7q",
+    "title": "Compartilhamento de Arquivos via Google Drive",
+    "content": "Compartilhei uma imagem da arquitetura do container Docker local e enviei os arquivos compactados (17 GB) via Google Drive.",
+    "date": "2024-11-10T19:51:51.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6o000t3b6g5o1p7q3r",
+    "title": "Convite para o Grupo do Oxossi no WhatsApp",
+    "content": "Professor perguntou sobre o andamento e me convidou para o grupo do Oxossi no WhatsApp, o que confirmei. Este foi um marco importante, pois representou minha entrada oficial na equipe de desenvolvimento do projeto Oxossi.",
+    "date": "2024-11-14T19:01:05.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6p000u3b6g1p7q3r9s",
+    "title": "Avanço com Containerização para o Oxossi",
+    "content": "Reportei grande avanço: consegui fazer as aplicações (Cliomatica e Atlas) rodarem localmente em containers Docker, superando o problema dos bancos de dados. Esta experiência com containerização será fundamental para a futura implantação do Oxossi, garantindo portabilidade e facilidade de manutenção.",
+    "date": "2024-11-16T19:33:16.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6p000v3b6g7q3r9s5t",
+    "title": "Finalização dos Estágios e Planejamento do Oxossi",
+    "content": "Informei que estava finalizando meus estágios e poderia ir à UnB na semana seguinte para implantar as aplicações no servidor. Discutimos também a implantação do novo código do Oxossi (do Caio), concordando em analisar a melhor abordagem, possivelmente usando um container Docker separado para ele.",
+    "date": "2024-11-21T13:14:33.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6q000w3b6g3r9s5t1u",
+    "title": "Preparação para Implantação no Servidor",
+    "content": "Confirmei que estava finalizando a preparação para a implantação no servidor, com previsão de término dos estágios na segunda-feira.",
+    "date": "2024-11-23T14:57:31.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6q000x3b6g9s5t1u7v",
+    "title": "Inclusão no Grupo Aquário",
+    "content": "Fui adicionado ao grupo \"Aquário\" (grupo geral de alunos do LHS) pelo professor.",
+    "date": "2024-11-24T15:23:54.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6r000y3b6g5t1u7v3w",
+    "title": "Agendamento da Implantação do Container",
+    "content": "Agendei a implantação do container (MediaWikis) no servidor para quinta-feira às 15:00.",
+    "date": "2024-11-27T12:00:24.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6r000z3b6g1u7v3w9x",
+    "title": "MARCO: Primeira Implantação do Oxossi no Servidor",
+    "content": "MARCO HISTÓRICO: Consegui acesso SSH remoto e comecei a primeira implantação do projeto Oxossi no servidor como prioridade absoluta. Este momento marca a transição do desenvolvimento local para o ambiente de produção. Realizei o clone do repositório GitHub do Oxossi (versão desenvolvida pelo Caio), configurei o back-end Python, e estabeleci o ambiente inicial de produção. O back-end do Oxossi ficou online pela primeira vez no servidor. Compartilhei o link da aplicação Oxossi rodando na Vercel (https://oxossi.vercel.app/) com a equipe de design para alinhamento visual.",
+    "date": "2024-11-28T16:43:05.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6s00103b6g7v3w9x5y",
+    "title": "Cancelamento da Ida à Pizzaria",
+    "content": "Precisei cancelar minha ida à pizzaria, pois continuei passando mal (vômito), suspeitando de virose.",
+    "date": "2024-11-29T19:21:35.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6s00113b6g3w9x5y1z",
+    "title": "Problema de Acesso Externo ao Front-end do Oxossi",
+    "content": "Identifiquei um problema crítico de acesso externo ao front-end do Oxossi, que funcionava apenas localmente no servidor (porta 3300) mas não externamente. O professor confirmou que provavelmente apenas a porta 13508 estava liberada pelo firewall da UnB. Discuti estratégias para contornar isso no Oxossi: usar Nginx como proxy reverso na porta 13508 ou solicitar a abertura de novas portas.",
+    "date": "2024-12-02T16:01:16.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6t00123b6g9x5y1z7a",
+    "title": "Confirmação de Encontro sobre Monografia",
+    "content": "Confirmei o encontro sobre a monografia para quarta-feira às 15:00.",
+    "date": "2024-12-03T19:13:04.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6t00133b6g5y1z7a3b",
+    "title": "Encontro sobre Monografia e Liberação de Portas para o Oxossi",
+    "content": "Fui encontrar o professor para discutir a monografia e o andamento do projeto Oxossi. Ele informou que já havia solicitado ao CPD a liberação das portas necessárias para o funcionamento externo do Oxossi, especificamente as portas 80 e 443 para tráfego HTTP/HTTPS.",
+    "date": "2024-12-04T13:49:01.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6u00143b6g1z7a3b9c",
+    "title": "Liberação das Portas para o Oxossi Aprovada",
+    "content": "O professor compartilhou a resposta oficial do CPD confirmando que o problema das portas 80 e 443 estava 'Resolvido'. Esta liberação é fundamental para permitir o acesso externo ao projeto Oxossi via HTTP e HTTPS, removendo as barreiras de firewall que impediam o acesso público à aplicação.",
+    "date": "2024-12-05T15:28:25.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6u00153b6g7a3b9c5d",
+    "title": "MARCO: Convite para Trabalho Remunerado Dedicado ao Oxossi",
+    "content": "MARCO PROFISSIONAL: Fui oficialmente convidado e aceitei trabalhar especificamente no projeto Oxossi de forma remunerada durante o mês de Janeiro de 2025. Este convite representa o reconhecimento do meu trabalho técnico e dedicação ao projeto, marcando a transição para um desenvolvedor profissional dedicado exclusivamente ao Oxossi.",
+    "date": "2024-12-05T18:03:04.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6v00163b6g3b9c5d1e",
+    "title": "Confirmação do Trabalho Dedicado ao Oxossi",
+    "content": "Professor confirmou oficialmente que o trabalho remunerado de Janeiro seria dedicado integralmente ao desenvolvimento e aprimoramento do projeto Oxossi.",
+    "date": "2024-12-06T07:46:50.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6v00173b6g9c5d1e7f",
+    "title": "MARCO: Oxossi Completamente Funcional no Servidor",
+    "content": "MARCO HISTÓRICO: Reportei que o projeto Oxossi estava completamente funcional no servidor via IP: http://164.41.165.165/oxossi. Este momento representa a primeira vez que o sistema de busca de documentos sobre Brasil Colônia estava verdadeiramente operacional para usuários finais. Funcionalidades ativas incluem: sistema de busca em documentos históricos, interface web responsiva, back-end de análise de texto operacional, e integração completa front-end/back-end. O professor anunciou no grupo 'Oxossi programação' a implantação bem-sucedida.",
+    "date": "2024-12-07T07:23:05.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6w00183b6g5d1e7f3g",
+    "title": "Melhorias na Experiência do Usuário do Oxossi",
+    "content": "Implementei várias melhorias críticas no Oxossi: desativei temporariamente para configurar SSL com certificado autoassinado, garantindo segurança nas comunicações. Corrigi um erro 500 que impactava a funcionalidade de busca e resolvi problema de redirecionamento no Nginx. Mais importante, corrigi um bug crítico na funcionalidade de busca do Oxossi que estava impedindo o retorno correto dos resultados. Propus adicionar indicador de carregamento (loading) para melhorar a UX, considerando a latência da busca em arquivos JSON. O sistema de busca do Oxossi tornou-se totalmente funcional e estável.",
+    "date": "2024-12-08T12:49:06.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6w00193b6g1e7f3g9h",
+    "title": "Disponibilização do Acesso ao phpMyAdmin",
+    "content": "Disponibilizei o acesso ao phpMyAdmin (http://164.41.165.165/phpmyadmin) para gerenciamento dos bancos de dados das aplicações, incluindo futura gestão de dados do Oxossi.",
+    "date": "2024-12-09T07:40:24.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6x001a3b6g7f3g9h5i",
+    "title": "Cliomatica Online e Funcional",
+    "content": "Reportei que a aplicação Cliomatica estava online e funcional, com seu banco de dados configurado.",
+    "date": "2024-12-10T22:28:58.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6x001b3b6g3g9h5i1j",
+    "title": "Ajustes no Nginx e Agendamento de Reunião",
+    "content": "Avisei que talvez o Cliomatica não estivesse mais funcional, pois mexi nas configurações do Nginx. Marcamos um encontro para segunda-feira (16/12) às 18:00.",
+    "date": "2024-12-11T08:00:59.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6y001c3b6g9h5i1j7k",
+    "title": "Confirmação do Encontro de TCC",
+    "content": "Confirmamos o encontro de TCC para segunda-feira às 18:00.",
+    "date": "2024-12-12T08:42:14.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6y001d3b6g5i1j7k3l",
+    "title": "Recebimento do Back-end de Análise do Oxossi",
+    "content": "EXPANSÃO TÉCNICA: Nos encontramos para discutir o TCC e o professor compartilhou códigos Python fundamentais para o projeto Oxossi: 'oX_coletorTemasDedutivo.py' (coletor de temas dedutivos) e 'OxExpressoesCompostas.py' (processador de expressões compostas). Estes códigos representam o núcleo da análise de texto do Oxossi, responsáveis por extrair informações semânticas dos documentos históricos. Esta foi uma expansão importante do escopo técnico do projeto.",
+    "date": "2024-12-16T14:29:57.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6z001e3b6g1j7k3l9m",
+    "title": "Proposta de Modernização do Back-end do Oxossi",
+    "content": "PROPOSTA ARQUITETURAL: Sugeri reescrever o código Python do Oxossi (recebido em 16/12) em JavaScript/TypeScript para facilitar meu entendimento, manutenção e possível integração com o front-end React. Esta proposta demonstra visão arquitetural para modernização e evolução sustentável do projeto Oxossi. Planejei focar 100% no Oxossi durante o recesso das festas.",
+    "date": "2024-12-18T10:25:24.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v6z001f3b6g7k3l9m5n",
+    "title": "Trabalho no Servidor e Reflexões sobre o Oxossi",
+    "content": "Trabalhei presencialmente no servidor, focando em subir o banco de dados biblioatlas e do cliomatica. Durante o trabalho, refleti sobre a importância de manter o Oxossi atualizado e bem documentado para evitar que se torne sistema legado, como ocorreu com Atlas e Cliomatica que precisaram de extensa modernização.",
+    "date": "2024-12-19T11:25:33.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v70001g3b6g3l9m5n1o",
+    "title": "Cliomatica e Atlas Online com SSL",
+    "content": "Reportei que as aplicações Cliomatica e Atlas estavam online e funcionais, acessíveis via HTTPS com certificado autoassinado. Sugeri verificar o processo oficial de SSL da UnB (relevante para o Oxossi) e definir quais aplicações seriam mantidas no servidor a longo prazo.",
+    "date": "2024-12-20T15:40:44.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v70001h3b6g9m5n1o7p",
+    "title": "Solicitação de Upload de Arquivos do Sentinela",
+    "content": "Recebi solicitação do professor para colocar uma pasta com arquivos do projeto 'Sentinela' no servidor.",
+    "date": "2024-12-25T16:31:57.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v71001i3b6g5n1o7p3q",
+    "title": "Refatoração do Projeto Sentinela",
+    "content": "Recebi os arquivos do Sentinela, analisei o código React e propus refatoração da arquitetura e design, tornando-o responsivo. O professor aprovou a proposta com remuneração adicional.",
+    "date": "2024-12-26T15:10:42.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v71001j3b6g1o7p3q9r",
+    "title": "Implantação do Sentinela e Oxossi Temporariamente Offline",
+    "content": "Implantei o Sentinela no servidor (https://164.41.165.165/sentinela), ainda pendente de configurações finais. Durante os ajustes no Nginx para acomodar múltiplas aplicações, o Oxossi ficou temporariamente offline, demonstrando a complexidade de gerenciar múltiplos projetos no mesmo servidor.",
+    "date": "2024-12-27T20:49:39.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v72001k3b6g7p3q9r5s",
+    "title": "Conclusão da Implantação do Sentinela",
+    "content": "Reportei a conclusão da implantação funcional do Sentinela. Confirmei o início do trabalho remunerado dedicado ao Oxossi a partir de 06/01/2025.",
+    "date": "2024-12-30T10:26:15.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v72001l3b6g3q9r5s1t",
+    "title": "Atualização do sentinela.json e Favicon",
+    "content": "Realizei a substituição do arquivo sentinela.json no servidor e corrigi o favicon do Sentinela, conforme solicitado.",
+    "date": "2025-01-01T22:53:26.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v73001m3b6g9r5s1t7u",
+    "title": "Preparação da Infraestrutura do Servidor",
+    "content": "Fiz o upload de um arquivo HTML simples como index.html na raiz do servidor (https://164.41.165.165/). Expliquei a mudança de Apache para Nginx e suas implicações, recomendando SCP ou configuração de SFTP para futuros uploads. Compartilhei o repositório privado do GitHub com as configurações do Nginx.",
+    "date": "2025-01-02T22:15:08.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v73001n3b6g5s1t7u3v",
+    "title": "MARCO: Início do Trabalho Dedicado ao Oxossi",
+    "content": "MARCO PROFISSIONAL: Perguntei sobre as demandas para o dia, marcando o início oficial do trabalho remunerado dedicado exclusivamente ao projeto Oxossi. O professor informou sobre o planejamento de uma reunião com Saulo (desenvolvedor do back-end Python do Oxossi) para definir estratégias e próximos passos.",
+    "date": "2025-01-06T13:24:39.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v74001o3b6g1t7u3v9w",
+    "title": "Reunião de Alinhamento da Equipe Oxossi",
+    "content": "FORMAÇÃO DA EQUIPE: Participei da reunião online (Google Meet) com Prof. Tiago e Saulo para alinhamento sobre o projeto Oxossi. Esta reunião estabeleceu formalmente a equipe de desenvolvimento: Prof. Tiago Gil (coordenação e requisitos acadêmicos), Saulo (desenvolvimento do back-end Python para análise de texto), e eu (front-end React e infraestrutura de usuários). Definimos estratégias técnicas e dividimos responsabilidades para o desenvolvimento coordenado do projeto.",
+    "date": "2025-01-07T15:01:48.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v74001p3b6g7u3v9w5x",
+    "title": "Infraestrutura de Banco de Dados do Oxossi",
+    "content": "IMPLEMENTAÇÃO TÉCNICA: Planejei e disponibilizei o mongo-express para visualização do banco de dados MongoDB do Oxossi em https://lhs.unb.br/mongo-express. Esta ferramenta é fundamental para permitir à equipe visualizar e gerenciar os dados do Oxossi de forma intuitiva, essencial para desenvolvimento, debugging e monitoramento da performance do sistema de busca.",
+    "date": "2025-01-08T18:27:30.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v75001q3b6g3v9w5x1y",
+    "title": "Configuração de Domínio e Colaboração Técnica",
+    "content": "Corrigi o LocalSettings.php de cada MediaWiki para usar o domínio correto e resolvi problemas de links nos PDFs do Sentinela. Estabeleci comunicação técnica produtiva com Saulo sobre versionamento Git das alterações no repositório do Oxossi, garantindo coordenação no desenvolvimento colaborativo.",
+    "date": "2025-01-09T19:25:57.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v75001r3b6g9w5x1y7z",
+    "title": "Planejamento do Desenvolvimento do Front-end",
+    "content": "Planejei trabalhar intensivamente no front-end do Oxossi durante o fim de semana, focando na integração com o back-end modernizado.",
+    "date": "2025-01-10T11:26:51.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v76001s3b6g5x1y7z3a",
+    "title": "Modernização da Arquitetura do Oxossi",
+    "content": "DECISÃO ARQUITETURAL CRÍTICA: Confirmei com Saulo a alteração fundamental do back-end Python do Oxossi para retornar JSON em vez de HTML, modernizando completamente a integração com o front-end React. Esta mudança representa uma evolução significativa na arquitetura, permitindo melhor separação de responsabilidades e facilitando futuras expansões. Compartilhei vídeo demonstrando o front-end React do Oxossi consumindo dados do back-end modificado localmente.",
+    "date": "2025-01-13T16:40:51.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v76001t3b6g1y7z3a9b",
+    "title": "Definição dos Requisitos da Área Administrativa",
+    "content": "EXPANSÃO FUNCIONAL: Solicitei e recebi os requisitos detalhados para a área administrativa do Oxossi por áudio. Requisitos incluem: CRUD completo (usuários, documentos, termos de busca), estatísticas avançadas (acessos, buscas populares, downloads), perfis de usuário (sistema de favoritos, histórico de buscas, coleções personalizadas), analytics (gráficos de palavras-chave mais buscadas), e gestão de conteúdo (sistema de upload de PDFs). Recebi também link com centenas de PDFs sobre Brasil Colonial para testar performance e escalabilidade.",
+    "date": "2025-01-16T15:58:44.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v77001u3b6g7z3a9b5c",
+    "title": "Demonstração do Dashboard Administrativo",
+    "content": "PROGRESSO TÉCNICO: Compartilhei vídeo demonstrando progresso no dashboard administrativo do Oxossi com interface funcional usando dados fictícios para prototipagem. Planejei implementar testes unitários/E2E e configurar GitHub Actions para CI/CD. Adicionei professor e Saulo ao repositório GitHub do front-end (JulioRarick/oxossi-front). Confirmei que a área administrativa seria otimizada para uso desktop.",
+    "date": "2025-01-18T18:26:16.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v77001v3b6g3a9b5c1d",
+    "title": "Preparação para Reunião de Design",
+    "content": "O professor pediu capturas de tela do dashboard do Oxossi para a reunião de design do dia seguinte. Confirmei a necessidade de ajustar o back-end Python para expor os dados necessários para o dashboard e a adequação da arquitetura React do front-end.",
+    "date": "2025-01-20T15:06:42.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v78001w3b6g9b5c1d7e",
+    "title": "Colaboração Interdisciplinar com Design",
+    "content": "REUNIÃO DE DESIGN: Participei da reunião online com a equipe de design do Oxossi, reconhecendo a importância do design centrado no usuário para o sucesso do projeto. Avaliei o processo como focado no usuário e bem elaborado, reconhecendo minha necessidade de aprender mais sobre UI/UX para contribuir melhor com o projeto.",
+    "date": "2025-01-21T13:58:42.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v78001x3b6g5c1d7e3f",
+    "title": "Aprovação da Arquitetura de API Separada",
+    "content": "DECISÃO ARQUITETURAL APROVADA: O professor aprovou oficialmente minha proposta de criar uma API separada para gerenciamento de usuários do Oxossi (Node.js), mantendo o back-end principal (Python) focado exclusivamente na análise e busca de documentos. Arquitetura final definida: Back-end Principal (Python/Saulo) para análise de texto, busca e processamento de documentos; API de Usuários (Node.js/Júlio) para autenticação, perfis, estatísticas e administração. Criei versão placeholder do Oxossi em https://lhs.unb.br/oxossi incluindo área administrativa (/admin) e textos institucionais.",
+    "date": "2025-01-22T07:08:47.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v79001y3b6g1d7e3f9g",
+    "title": "Implementação de SSL e Repositório da API",
+    "content": "Corrigi o mapeamento de URL para a aplicação Atlas (lhs.unb.br/atlas). Implementei com sucesso certificado SSL válido (Let's Encrypt) para o domínio lhs.unb.br, melhorando significativamente a segurança do acesso ao Oxossi e outras aplicações. Criei e compartilhei o repositório GitHub para a API de usuários do Oxossi (JulioRarick/node-users-api), desenvolvida em Node.js.",
+    "date": "2025-01-24T18:28:47.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v79001z3b6g7e3f9g5h",
+    "title": "Interrupção Temporária por Questões Pessoais",
+    "content": "Comuniquei sobre a interrupção temporária das atividades do Oxossi devido a questões pessoais de saúde mental (crise pessoal, término de relacionamento, dívida).",
+    "date": "2025-01-29T15:18:51.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7a00203b6g3f9g5h1i",
+    "title": "Retomada das Atividades no Oxossi",
+    "content": "Reportei melhora e retomei as atividades, planejando implementar a lógica de front-end para a área administrativa do Oxossi, conectando-a à API Node.js desenvolvida.",
+    "date": "2025-01-30T15:22:13.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7a00213b6g9g5h1i7j",
+    "title": "Desenvolvimento da Funcionalidade de Usuários",
+    "content": "Continuei o desenvolvimento da parte administrativa do Oxossi, focando especificamente na criação de usuários via API Node.js. Implementei a integração entre o front-end React e a API de usuários, estabelecendo a base para o sistema completo de gerenciamento de usuários do Oxossi.",
+    "date": "2025-01-31T19:39:33.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7b00223b6g5h1i7j3k",
+    "title": "Progresso na Integração Front-end/Back-end",
+    "content": "Reportei progresso significativo na integração front-end/back-end da área administrativa do Oxossi (commit 9c275d9...). Planejei sincronização com Saulo sobre o back-end Python e identifiquei funcionalidades administrativas pendentes: gráficos de estatísticas e upload de arquivos. Solicitei e recebi adiantamento de pagamento devido à situação financeira.",
+    "date": "2025-02-03T08:22:51.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7b00233b6g1i7j3k9l",
+    "title": "Reunião de Alinhamento Técnico Detalhada",
+    "content": "REUNIÃO TÉCNICA CRÍTICA: Realizamos reunião de alinhamento abrangente sobre o Oxossi via WhatsApp com Prof. Tiago e Saulo. STATUS DA EQUIPE: Eu - progresso no back-end Node.js e front-end administrativo; Prof. Tiago - coordenação de design, ideias para análise de texto; Saulo - processamento de PDFs para o back-end Python. PENDÊNCIAS: integração final front/back (dependente do design), teste de escalabilidade com 10k+ PDFs, migração para DBs da UnB. DECISÕES TÉCNICAS: confirmação da arquitetura separada (Node.js + Python), paginação no DB administrativo, PostgreSQL/Prisma na API de usuários, testes com Vitest. PRÓXIMOS 15 DIAS: refatoração admin, estatísticas de visita, componente de resultados, testes unitários.",
+    "date": "2025-02-06T18:36:55.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7c00243b6g7j3k9l5m",
+    "title": "Agendamento de Conversa sobre TCC",
+    "content": "Agendei uma conversa sobre o TCC para o final de semana (15-16/02), mantendo foco paralelo no desenvolvimento do Oxossi.",
+    "date": "2025-02-10T21:23:53.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7c00253b6g3k9l5m1n",
+    "title": "Configuração de Acesso SFTP no Servidor",    
+    "content": "Configurei o acesso SFTP restrito no servidor LHS para upload de arquivos pelo orientador, expandindo as capacidades de infraestrutura para suporte aos projetos do laboratório.",
+    "date": "2025-02-12T18:05:48.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7d00263b6g9l5m1n7o",
+    "title": "Resolução de Pendência Administrativa do TCC",
+    "content": "Resolvi a pendência administrativa referente à entrega da carta de aceite do TCC. Reafirmei compromisso com o desenvolvimento do Oxossi apesar de problemas pessoais.",
+    "date": "2025-02-13T17:45:54.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7d00273b6g5m1n7o3p",
+    "title": "Movimentação de Arquivos no Servidor",
+    "content": "Confirmei a conclusão do upload de arquivos pelo orientador e executei a movimentação dos arquivos para o diretório de destino no servidor (/var/www/html/images/pedacos).",
+    "date": "2025-02-16T18:42:20.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7e00283b6g1n7o3p9q",
+    "title": "Agendamento de Reunião sobre TCC e Oxossi",
+    "content": "Agendei uma reunião online para quarta-feira (19/02) para discussão sobre o TCC e o andamento do projeto Oxossi. Reenviei convites para repositórios GitHub do Oxossi.",
+    "date": "2025-02-18T21:04:49.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7e00293b6g7o3p9q5r",
+    "title": "Reunião Online sobre TCC e Oxossi",
+    "content": "Realizei a reunião online com o orientador sobre o TCC e o projeto Oxossi, discutindo progresso técnico e próximos passos.",
+    "date": "2025-02-19T18:25:09.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7f002a3b6g3p9q5r1s",
+    "title": "Feedback do TCC e Estratégia para o Oxossi",
+    "content": "Recebi feedback sobre o TCC por áudio e solicitação para avaliação da instalação do GeoNode. Recebi também um 'conceito' de design (imagem) para o Oxossi. Discuti a estratégia para desenvolvimento do Oxossi frente ao atraso do design, expressando preocupação com retrabalho no front-end. Definimos prioridades via áudio: login interno, perfil (histórico, favoritos, coleções), exibição de dados do DB, avaliação de web scraping.",
+    "date": "2025-02-20T13:54:38.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7f002b3b6g9q5r1s7t",
+    "title": "Instalação do GeoNode e Conflito Técnico",
+    "content": "Recebi PDF detalhado sobre o design do Oxossi ('Oxossi_Estrutura e conceito.pdf'). Iniciei a instalação do GeoNode no servidor e identifiquei um conflito técnico na instalação via Docker com o Nginx existente.",
+    "date": "2025-02-21T18:54:59.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7g002c3b6g5r1s7t3u",
+    "title": "Recebimento de Alternativas ao GeoNode",
+    "content": "Recebi sugestões de alternativas ao GeoNode (MapStore, MapServer) pelo orientador para continuar o desenvolvimento de ferramentas complementares aos projetos do laboratório.",
+    "date": "2025-02-23T20:37:56.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7g002d3b6g1s7t3u9v",
+    "title": "Indisponibilidade Total do Servidor LHS",
+    "content": "Iniciei a instalação do MapStore no servidor e detectei a indisponibilidade total do servidor LHS, impactando o Oxossi e todas as outras aplicações. SSH inacessível, suspeitando de falha de energia/rede na UnB.",
+    "date": "2025-02-24T19:36:32.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7h002e3b6g7t3u9v5w",
+    "title": "MARCO: Restabelecimento Completo do Servidor",
+    "content": "INTERVENÇÃO CRÍTICA: Realizei uma intervenção presencial emergencial no servidor na UnB à noite. Encontrei o servidor desligado, liguei-o mas apresentou instabilidade por alto consumo de memória. Diagnostiquei e removi instalação não utilizada do PostgreSQL, otimizei a memória com zram-config. RESULTADO: Restaurei completamente o servidor e todas as aplicações (Oxossi, Atlas, Cliomatica, Sentinela) voltaram a ficar online. Testei SSH com sucesso. Este foi um momento crítico que demonstrou a importância da manutenção da infraestrutura para o projeto Oxossi.",
+    "date": "2025-02-25T18:41:24.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7h002f3b6g3u9v5w1x",
+    "title": "Implantação de Atualizações da Área Administrativa",
+    "content": "Implantei com sucesso as últimas alterações do projeto Oxossi no servidor, incluindo a integração completa com o banco de dados de usuários da API administrativa Node.js. Compartilhei o acesso admin do Oxossi com a equipe de design no grupo WhatsApp para feedback e testes.",
+    "date": "2025-02-26T13:33:29.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7i002g3b6g9v5w1x7y",
+    "title": "Auxílio em Outro Servidor e Planejamento",
+    "content": "Auxiliei no diagnóstico de problema de acesso a outro servidor do LHS (Windows) e planejei a instalação da aplicação de mapas no servidor principal durante o fim de semana.",
+    "date": "2025-02-27T21:16:36.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7i002h3b6g5w1x7y3z",
+    "title": "Reunião Online e Código Experimental",
+    "content": "Realizei a reunião online sobre o TCC (remarcada para 19:00). Recebi código experimental HTML/JS para ferramenta de transcrição de imagens (Sentinela) e para aplicação de mapas (Leaflet). Analisei os códigos e identifiquei potencial de melhoria significativo, planejando versões mais robustas.",
+    "date": "2025-02-28T19:00:18.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7j002i3b6g1x7y3z9a",
+    "title": "Desenvolvimento Contínuo do Oxossi e Mapas",
+    "content": "Relatei sobre o desenvolvimento contínuo de implementações no Oxossi e na plataforma de mapas complementar, mantendo múltiplas frentes de desenvolvimento ativas para o laboratório.",
+    "date": "2025-03-10T13:20:38.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7j002j3b6g7y3z9a5b",
+    "title": "Aplicação de OCR nos PDFs do Sentinela",
+    "content": "Recebi e aceitei a solicitação para aplicação de OCR em lote nos PDFs do projeto Sentinela, uma tarefa técnica complexa que complementa o trabalho de digitalização de documentos históricos do laboratório.",
+    "date": "2025-03-15T21:54:32.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7k002k3b6g3z9a5b1c",
+    "title": "Execução do Script de OCR e Agendamento",
+    "content": "Executei com sucesso o script de OCR nos PDFs do Sentinela. Mencionei alterações pendentes no back-end do Oxossi que precisavam ser enviadas para o GitHub. Agendei participação em reunião online com a equipe de design do Oxossi para coordenação do desenvolvimento visual.",
+    "date": "2025-03-17T17:50:29.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7k002l3b6g9a5b1c7d",
+    "title": "Upload dos PDFs com OCR e Reunião de Design",
+    "content": "Fiz upload dos PDFs processados com OCR para o servidor, substituindo os originais no Sentinela para melhorar a funcionalidade de busca textual. Participei da reunião online com a equipe de design do Oxossi, contribuindo com perspectiva técnica para as decisões de interface e experiência do usuário.",
+    "date": "2025-03-18T14:09:44.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7l002m3b6g5b1c7d3e",
+    "title": "Desenvolvimento da Plataforma de Mapas",
+    "content": "Continuei o desenvolvimento da plataforma de mapas complementar aos projetos do laboratório. Compartilhei captura de tela inicial e reportei atraso temporário devido à necessidade de corrigir pacote NPM pessoal (linting), demonstrando atenção à qualidade do código.",
+    "date": "2025-03-19T18:34:29.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7l002n3b6g1c7d3e9f",
+    "title": "Apresentação da Aplicação de Mapas Avançada",
+    "content": "Apresentei capturas de tela detalhadas da aplicação de mapas, incluindo funcionalidades de visualização e upload de GeoJSON. Detalhei funcionalidades implementadas (tratamento de erros, validação de arquivos) e planejadas (autenticação, modal responsivo, interface intuitiva). Solicitei feedback técnico e planejei implantação para o domingo.",
+    "date": "2025-03-20T22:23:28.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7m002o3b6g7d3e9f5g",
+    "title": "MARCO: Recebimento do Protótipo Final do Oxossi",
+    "content": "MARCO DE DESIGN: Recebi o link para o protótipo navegável final do Oxossi no Figma, elaborado pela equipe de design. Este protótipo representa a visão definitiva da interface do usuário e serve como referência final para implementação do front-end. Os fluxos de administração e perfil ainda estavam em desenvolvimento pela equipe de design, mas o núcleo da interface estava definido.",
+    "date": "2025-03-22T01:28:24.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7m002p3b6g3e9f5g1h",
+    "title": "Demonstração da Aplicação de Mapas Finalizada",
+    "content": "Compartilhei vídeo demonstrativo completo da aplicação de mapas finalizada, incluindo todas as funcionalidades implementadas. Recebi aprovação oficial do professor para implantação no servidor. Discutimos a viabilidade técnica de exibir múltiplos mapas (GeoJSONs) sobrepostos na aplicação, o que considerei perfeitamente factível.",
+    "date": "2025-03-23T11:00:25.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7n002q3b6g9f5g1h7i",
+    "title": "Discussão sobre Integração de Design",
+    "content": "Discuti sobre a ferramenta de imagens do Sentinela e a facilidade técnica de integrar elementos do design do Figma no futuro desenvolvimento do Oxossi, demonstrando flexibilidade para adaptações visuais.",
+    "date": "2025-03-25T13:51:13.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7n002r3b6g5g1h7i3j",
+    "title": "Relato de Incidente Pessoal Grave",
+    "content": "Relatei um incidente pessoal grave (ameaça por pai de aluno após acidente de trânsito), registrei ocorrência policial, impactando temporariamente o cronograma de desenvolvimento.",
+    "date": "2025-03-26T20:10:55.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7o002s3b6g1h7i3j9k",
+    "title": "Obtenção de Atestado Médico",
+    "content": "Obtive atestado médico para licença do trabalho devido ao incidente pessoal.",
+    "date": "2025-03-27T14:19:00.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7o002t3b6g7i3j9k5l",
+    "title": "Agendamento de Reunião sobre TCC e Oxossi",
+    "content": "Reportei melhora e período de licença até 07/04. Agendei encontro para segunda-feira seguinte (31/03) às 16:00 para apresentar o andamento detalhado do TCC e do projeto Oxossi, incluindo todo o progresso técnico realizado.",
+    "date": "2025-03-28T19:56:00.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7p002u3b6g3j9k5l1m",
+    "title": "Início da Refatoração Completa do Back-end Python",
+    "content": "MODERNIZAÇÃO TÉCNICA: Comecei a refatoração completa do código Python do Oxossi (oxossi_py), incluindo documentação abrangente e implementação de testes unitários. Esta refatoração visa modernizar o código base, melhorar a manutenibilidade e garantir qualidade através de testes automatizados.",
+    "date": "2025-04-09T19:51:44.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7p002v3b6g9k5l1m7n",
+    "title": "Melhorias na API e Localização",
+    "content": "APRIMORAMENTOS TÉCNICOS: Expus o JSON na resposta dos extratores de nomes do Oxossi, melhorando a integração API. Traduzi todos os prints e mensagens do sistema para português brasileiro, tornando a aplicação mais acessível para pesquisadores brasileiros.",
+    "date": "2025-04-14T19:21:16.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7q002w3b6g5l1m7n3o",
+    "title": "Expansão de Funcionalidades e Configurações",
+    "content": "Adicionei utilitários complementares aos extratores do Oxossi e implementei configurações avançadas de temas e datas no diretório de dados, expandindo as capacidades analíticas do sistema.",
+    "date": "2025-04-15T07:33:21.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7q002x3b6g1m7n3o9p",
+    "title": "Correção de Bugs e Otimizações",
+    "content": "Corrigi bug crítico nos extratores de nomes do Oxossi e refatorei o sistema de contagem de nomes, melhorando a precisão e performance da análise de texto.",
+    "date": "2025-04-16T18:28:12.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7r002y3b6g7n3o9p5q",
+    "title": "Implementação do Design Final no Front-end",
+    "content": "APLICAÇÃO DO DESIGN OFICIAL: Atualizei as cores e ícones do front-end do Oxossi (oxossi-front), aplicando oficialmente o design elaborado pela equipe no formulário de busca e outros componentes principais. Esta atualização representa a materialização visual do projeto conforme especificado no protótipo Figma.",
+    "date": "2025-05-07T07:32:41.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7r002z3b6g3o9p5q1r",
+    "title": "Modernização da Interface e Biblioteca de Ícones",
+    "content": "Atualizei completamente a UI do header e footer do Oxossi, implementei nova biblioteca de ícones moderna e adicionei logos oficiais, criando uma identidade visual coesa e profissional para o projeto.",
+    "date": "2025-05-05T15:51:04.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7s00303b6g9p5q1r7s",
+    "title": "Implementação de Componentes Interativos",
+    "content": "Implementei slider interativo e adicionei estilos modernos à página de FAQ do Oxossi. Refatorei completamente o header e footer para melhor usabilidade e aparência visual consistente em todo o sistema.",
+    "date": "2025-05-16T14:22:36.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7s00313b6g5q1r7s3t",
+    "title": "Modernização da Área Administrativa",
+    "content": "Atualizei completamente a UI das páginas de login e cadastro da área administrativa do Oxossi, incluindo logos oficiais e implementando Ant Design no componente de busca para melhor experiência do usuário administrativo.",
+    "date": "2025-05-18T13:50:40.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7t00323b6g1r7s3t9u",
+    "title": "Expansão de Páginas e Funcionalidades",
+    "content": "Adicionei páginas dedicadas de autor e composição ao Oxossi, atualizei a UI geral e melhorei significativamente os resultados de busca na seção administrativa, expandindo as capacidades de navegação e descoberta de conteúdo.",
+    "date": "2025-05-21T09:35:15.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7t00333b6g7s3t9u5v",
+    "title": "Refinamento do Layout Administrativo",
+    "content": "Atualizei e refinei a UI do layout completo da seção administrativa do Oxossi, garantindo consistência visual e melhor experiência para administradores do sistema.",
+    "date": "2025-05-22T16:18:19.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7u00343b6g3t9u5v1w",
+    "title": "Aprimoramento da Gestão de Usuários",
+    "content": "Atualizei completamente a UI da tabela e página de usuários do Oxossi, melhorando a interface de gerenciamento de usuários para administradores.",
+    "date": "2025-05-26T09:44:40.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7u00353b6g9u5v1w7x",
+    "title": "Implementação de UX/UI Avançada nas Páginas Administrativas",
+    "content": "Adicionei elementos avançados de UX/UI em todas as páginas administrativas do Oxossi, incluindo micro-interações, feedback visual aprimorado, e navegação mais intuitiva para maximizar a eficiência dos administradores.",
+    "date": "2025-05-30T18:35:52.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7v00363b6g5v1w7x3y",
+    "title": "Finalização da UX/UI Completa do Sistema",
+    "content": "MARCO DE DESENVOLVIMENTO: Concluí a implementação completa da UX/UI tanto das páginas administrativas quanto das páginas de usuários finais do Oxossi. Refatorei a UI do formulário de busca principal, garantindo consistência visual em todo o sistema e experiência de usuário otimizada para pesquisadores acadêmicos.",
+    "date": "2025-05-31T16:47:55.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7v00373b6g1w7x3y9z",
+    "title": "MARCO: Finalização Completa da UX/UI do Projeto",
+    "content": "MARCO FINAL DE DESIGN: Finalizei completamente a UX/UI do projeto Oxossi, atingindo um estado de maturidade visual e funcional. O sistema agora possui interface moderna, intuitiva e totalmente alinhada com o protótipo Figma desenvolvido pela equipe de design. Todas as funcionalidades principais possuem interface polida e experiência de usuário otimizada.",
+    "date": "2025-06-01T07:00:56.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7w00383b6g7x3y9z5a",
+    "title": "Personalização da Página de Erro 404",
+    "content": "Implementei página 404 personalizada ('página não encontrada') para o Oxossi, mantendo a identidade visual do projeto mesmo em situações de erro e melhorando a experiência do usuário em cenários de navegação problemática.",
+    "date": "2025-06-03T09:19:14.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v7w00393b6g3y9z5a1b",
+    "title": "Otimização das Regras de Busca",
+    "content": "APRIMORAMENTO FINAL: Adicionei novas regras avançadas para as queries de busca do Oxossi, refinando a precisão e relevância dos resultados retornados pelo sistema de análise de texto. Esta foi uma das últimas otimizações técnicas implementadas no sistema de busca principal.",
+    "date": "2025-06-08T13:27:25.000Z",
+    "createdAt": "2025-05-14T19:01:03.589Z",
+    "updatedAt": "2025-05-14T19:01:03.589Z"
+  },
+  {
+    "id": "clw4s9v9g006b3b6g3e9f5g1h",
+    "title": "MARCO: Finalização da Versão do TCC sobre o Oxossi",
+    "content": "MARCO ACADÊMICO: Concluí a escrita e formatação da versão final do TCC, documentando integralmente todo o processo de desenvolvimento do projeto Oxossi. O trabalho inclui análise técnica detalhada, metodologia de desenvolvimento, resultados obtidos, e contribuições para a pesquisa em História Digital. A documentação representa o registro acadêmico completo de um projeto de pesquisa tecnológica inovador.",
+    "date": "2025-07-21T10:40:42.000Z",
+    "createdAt": "2025-07-22T15:22:00.000Z",
+    "updatedAt": "2025-07-22T15:22:00.000Z"
+  },
+  {
+    "id": "clw4s9v9h006c3b6g9f5g1h7i",
+    "title": "MARCO: Envio do Material Completo para a Banca",
+    "content": "MARCO FINAL: Enviei o material completo (TCC e diário de bordo detalhado) para a banca examinadora. Este momento representa a conclusão formal de todo o ciclo de desenvolvimento do projeto Oxossi, desde a concepção inicial até a implementação completa de um sistema funcional de busca e análise de documentos históricos sobre o Brasil Colônia. O projeto demonstra a aplicação bem-sucedida de tecnologias modernas (React, Node.js, Python, MongoDB, PostgreSQL) na criação de ferramentas digitais para pesquisa histórica.",
+    "date": "2025-07-22T09:15:39.000Z",
+    "createdAt": "2025-07-22T15:22:00.000Z",
+    "updatedAt": "2025-07-22T15:22:00.000Z"
+  }
+]}
