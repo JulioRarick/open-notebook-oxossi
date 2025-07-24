@@ -12,6 +12,7 @@ import {
   deleteEntry
 } from '@/lib/json-db'
 import { DiaryEntry } from '@/types/diary'
+import { randomUUID } from 'crypto'
 
 const DiaryEntrySchema = z.object({
   title: z.string().min(3, { message: 'O título deve ter pelo menos 3 caracteres.' }).max(100),
@@ -29,6 +30,7 @@ export type FormState = {
 export async function createDiaryEntry(prevState: FormState,
   formData: FormData): Promise<FormState> {
   const rawFormData = {
+    id: prevState?.id || String(randomUUID()),
     title: formData.get('title'),
     content: formData.get('content'),
     date: formData.get('date') ? new Date(formData.get('date') as string) : undefined,
