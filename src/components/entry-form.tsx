@@ -188,6 +188,7 @@ export function EntryForm({
                     <PopoverTrigger asChild>
                       <FormControl>
                         <Button
+                          disabled
                           variant="outline"
                           className={cn(
                             'w-[240px] pl-3 text-left font-normal',
@@ -241,7 +242,7 @@ export function EntryForm({
               </FormItem>
             )}
           />
-          <Button type="submit" disabled={pending || form.formState.isSubmitting}>
+          <Button disabled type="submit">
             {pending || form.formState.isSubmitting
               ? (
                 <>

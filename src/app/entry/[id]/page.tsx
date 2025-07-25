@@ -19,7 +19,7 @@ function DeleteEntryButton({ entryId }: { entryId: string }) {
   return (
     <form action={deleteDiaryEntry}>
       <input type="hidden" name="entryId" value={entryId} />
-      <Button variant="destructive" size="sm" type="submit">
+      <Button disabled variant="destructive" size="sm" type="submit">
         <Trash2 className="mr-2 h-4 w-4" />
         Excluir
       </Button>
