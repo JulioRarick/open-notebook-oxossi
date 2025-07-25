@@ -143,6 +143,7 @@ export function EntryForm({
           <div className="flex items-center justify-center gap-2 mt-2">
             <Input
               id="markdown-upload"
+              disabled
               type="file"
               accept=".md,.markdown,text/markdown"
               onChange={handleFileUpload}

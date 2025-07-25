@@ -56,7 +56,7 @@ export default async function EntryDetailPage({ params }: EntryPageProps) {
         </CardContent>
         <CardFooter className="flex justify-end space-x-2">
           <Link href={`/edit/${entry.id}`}>
-            <Button variant="outline" size="sm">
+            <Button disabled variant="outline" size="sm">
               <Edit className="mr-2 h-4 w-4" />
               Editar
             </Button>
